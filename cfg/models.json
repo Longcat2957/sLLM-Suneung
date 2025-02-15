@@ -1,0 +1,74 @@
+{
+    "gemma2:2b": {
+        "context_length": 8192,
+        "model": "gemma2:2b-instruct-q4_K_S"
+    },
+    "gemma2:9b": {
+        "context_length": 8192,
+        "model": "gemma2:9b-instruct-q4_K_S"
+    },
+    "gemma2:27b": {
+        "context_length": 8192,
+        "model": "gemma2:27b-instruct-q4_K_S"
+    },
+    "phi4": {
+        "context_length": 16384,
+        "model": "phi4:14b-q4_K_M"
+    },
+    "llama3.3": {
+        "context_length": 131072,
+        "model": "llama3.3:70b-instruct-q4_K_S"
+    },
+    "qwen2.5:1.5b": {
+        "context_length": 32768,
+        "model": "qwen2.5:1.5b-instruct-q4_K_S"
+    },
+    "qwen2.5:3b": {
+        "context_length": 32768,
+        "model": "qwen2.5:3b-instruct-q4_K_S"
+    },
+    "qwen2.5:7b": {
+        "context_length": 32768,
+        "model": "qwen2.5:7b-instruct-q4_K_S"
+    },
+    "qwen2.5:14b": {
+        "context_length": 32768,
+        "model": "qwen2.5:14b-instruct-q4_K_S"
+    },
+    "qwen2.5:32b": {
+        "context_length": 32768,
+        "model": "qwen2.5:32b-instruct-q4_K_S"
+    },
+    "qwen2.5:72b": {
+        "context_length": 32768,
+        "model": "qwen2.5:72b-instruct-q4_K_S"
+    },
+    "exaone3.5:2.4b": {
+        "context_length": 32768,
+        "model": "exaone3.5:2.4b"
+    },
+    "exaone3.5:7.8b": {
+        "context_length": 32768,
+        "model": "exaone3.5:7.8b"
+    },
+    "exaone3.5:32b": {
+        "context_length": 32768,
+        "model": "exaone3.5:32b"
+    },
+    "mixtral:8x7b": {
+        "context_length": 32768,
+        "model": "mixtral:8x7b"
+    },
+    "mixtral:8x22b": {
+        "context_length": 65536,
+        "model": "mixtral:8x22b"
+    },
+    "aya-expanse:8b": {
+        "context_length": 8192,
+        "model": "aya-expanse:8b"
+    },
+    "aya-expanse:32b": {
+        "context_length": 8192,
+        "model": "aya-expanse:32b"
+    }
+}

@@ -11,6 +11,7 @@
 Ubuntu 22.04
 Intel Core i9-13900K + 128GB RAM
 NVIDIA RTX 4090 FE (24GB) + CUDA 12.6
+
 ```
 
 

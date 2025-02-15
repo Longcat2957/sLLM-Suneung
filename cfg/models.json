@@ -15,10 +15,6 @@
         "context_length": 16384,
         "model": "phi4:14b-q4_K_M"
     },
-    "llama3.3": {
-        "context_length": 131072,
-        "model": "llama3.3:70b-instruct-q4_K_S"
-    },
     "qwen2.5:1.5b": {
         "context_length": 32768,
         "model": "qwen2.5:1.5b-instruct-q4_K_S"

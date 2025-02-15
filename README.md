@@ -8,12 +8,10 @@
 해당 코드는 아래와 같은 환경에서 구동하였습니다.
 
 ```plaintext
-Ubuntu 22.04
-Intel Core i9-13900K + 128GB RAM
-NVIDIA RTX 4090 FE (24GB) + CUDA 12.6
-
+RunPod Pytorch 2.1
+18 vCPU 173 GB RAM
+1 x H100 NVL
 ```
-
 
 ## 데이터셋
 
@@ -28,11 +26,29 @@ NVIDIA RTX 4090 FE (24GB) + CUDA 12.6
 
 ## 모델 목록
 
-한국어의 입출력에 최적화된 모델들을 사용하였습니다.
+한국어의 입출력에 최적화(기준: **뇌피셜**)된 모델들을 사용하였습니다.
 
-| 모델 이름  | 모델 크기 | HuggingFace 링크 |
-|------------|-----------|------------------|
-|     |         |  |
+**뇌피셜** : 대충 LM Studio 넣었을 때 한국어 답변 괜찮게 나오는 애들
+
+| 모델 이름         | 모델 크기 |
+|-------------------|-----------|
+| gemma2:2b         | 2B        |
+| gemma2:9b         | 9B        |
+| gemma2:27b        | 27B       |
+| phi4              | 14B       |
+| qwen2.5:1.5b      | 1.5B      |
+| qwen2.5:3b        | 3B        |
+| qwen2.5:7b        | 7B        |
+| qwen2.5:14b       | 14B       |
+| qwen2.5:32b       | 32B       |
+| qwen2.5:72b       | 72B       |
+| exaone3.5:2.4b    | 2.4B      |
+| exaone3.5:7.8b    | 7.8B      |
+| exaone3.5:32b     | 32B       |
+| mixtral:8x7b      | 8x7B      |
+| mixtral:8x22b     | 8x22B     |
+| aya-expanse:8b    | 8B        |
+| aya-expanse:32b   | 32B       |
 
 > **참고:** 실제 비교에 사용된 모델의 추가 정보는 추후 업데이트 될 예정입니다.
 

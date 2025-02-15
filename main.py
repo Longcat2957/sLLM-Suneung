@@ -21,7 +21,7 @@ parser.add_argument("--debug", action="store_true", help="Debug mode")
 
 # options
 parser.add_argument("--seed", type=int, default=42, help="for reproducibility")
-parser.add_argument("--mirostat", type=int, default=0, choices=[1, 2, 3], help="Mirostat for sampling")
+parser.add_argument("--mirostat", type=int, default=0, choices=[0, 1, 2], help="Mirostat for sampling")
 parser.add_argument("--mirostat-eta", type=float, default=0.1, help="Mirostat eta for sampling")
 parser.add_argument("--temperature", type=float, default=0.7, help="Temperature for sampling")
 parser.add_argument("--top-k", type=int, default=40, help="Top-k for sampling")

@@ -1,7 +1,17 @@
 import os
 import re
+import yaml
 import json
 import textwrap
+
+def load_yaml(file_path: str) -> dict:
+    if not os.path.exists(file_path):
+        raise FileNotFoundError(f"YAML file not found: {file_path}")
+    try:
+        with open(file_path, "r", encoding="utf-8") as f:
+            return yaml.safe_load(f)
+    except Exception as e:
+        raise ValueError(f"Invalid YAML file: {file_path}") from e
 
 def load_json(file_path: str) -> dict:
     if not os.path.exists(file_path):

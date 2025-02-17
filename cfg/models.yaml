@@ -1,0 +1,20 @@
+# 이 파일은 sLLM에 대한 정보를 포함하고 있습니다.
+# utility/misc.py load_yaml함수를 통해 dict형태로 변환합니다.
+
+# Google Gemma2 모델에 엑세스 하기 위해서는 huggingface-cli로 인증이 필요합니다.
+"gemma2:2b":
+  tokenizer: google/gemma-2-2b-it
+  context_length: 8192
+  repo_id: "bartowski/gemma-2-2b-it-GGUF"
+  available_quant_type:
+    f32: gemma-2-2b-it-f32.gguf         # Full F32 weights. (10.46GB)
+    Q8_0: gemma-2-2b-it-Q8_0.gguf        # Extremely high quality, generally unneeded but max available quant. (2.78GB)
+    Q6_K_L: gemma-2-2b-it-Q6_K_L.gguf     # Uses Q8_0 for embed and output weights. Very high quality, near perfect, recommended. (2.29GB)
+    Q6_K: gemma-2-2b-it-Q6_K.gguf         # Very high quality, near perfect, recommended. (2.15GB)
+    Q5_K_M: gemma-2-2b-it-Q5_K_M.gguf     # High quality, recommended. (1.92GB)
+    Q5_K_S: gemma-2-2b-it-Q5_K_S.gguf     # High quality, recommended. (1.88GB)
+    Q4_K_M: gemma-2-2b-it-Q4_K_M.gguf     # Good quality, default size for must use cases, recommended. (1.71GB)
+    Q4_K_S: gemma-2-2b-it-Q4_K_S.gguf     # Slightly lower quality with more space savings, recommended. (1.64GB)
+    IQ4_XS: gemma-2-2b-it-IQ4_XS.gguf     # Decent quality, smaller than Q4_K_S with similar performance, recommended. (1.57GB)
+    Q3_K_L: gemma-2-2b-it-Q3_K_L.gguf     # Lower quality but usable, good for low RAM availability. (1.55GB)
+    IQ3_M: gemma-2-2b-it-IQ3_M.gguf       # Medium-low quality, new method with decent performance comparable to Q3_K_M. (1.39GB

@@ -41,17 +41,23 @@ RunPod Pytorch 2.1
 | qwen2.5:7b        | 7B        |
 | qwen2.5:14b       | 14B       |
 | qwen2.5:32b       | 32B       |
-| qwen2.5:72b       | 72B       |
 | exaone3.5:2.4b    | 2.4B      |
 | exaone3.5:7.8b    | 7.8B      |
 | exaone3.5:32b     | 32B       |
 | mixtral:8x7b      | 8x7B      |
-| mixtral:8x22b     | 8x22B     |
 | aya-expanse:8b    | 8B        |
 | aya-expanse:32b   | 32B       |
 
 > **참고:** 실제 비교에 사용된 모델의 추가 정보는 추후 업데이트 될 예정입니다.
 
+
+## requirements.txt
+
+```
+vllm
+
+```
+> **참고:** ollama 버전은 ollama-version 브랜치를 참고해주십시오
 
 ## 성능 평가 코드 예시
 
